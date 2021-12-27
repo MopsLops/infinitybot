@@ -1,5 +1,5 @@
 const mineflayer = require('mineflayer')
-let countDown = 20
+
 
 
 const bot = mineflayer.createBot({
