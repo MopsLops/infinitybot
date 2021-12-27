@@ -13,7 +13,7 @@ const bot = mineflayer.createBot({
   })
 
   bot.once('spawn', () => {
-    bot.chat('&aДобро пожаловать в Казахстан!')
+    bot.chat('Добро пожаловать в Казахстан!')
   })
 
   bot.on('chat', (all_members_are_administrators, message) => {
@@ -22,7 +22,7 @@ const bot = mineflayer.createBot({
     }
 
     if (message == 'Кто гей?')
-    bot.chat("[MetalDawin] > Я")
+    bot.chat("/say [MetalDawin] > Я")
   })
 
   function leave(){
