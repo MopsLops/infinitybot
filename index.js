@@ -5,7 +5,7 @@ const bot = mineflayer.createBot({
     username: 'Bot',   
   })
 
-  bot.on('chat', (player, message) => {
+  bot.on('chat', (_username, message) => {
     if (message == 'liv') {
       leave()
     }
