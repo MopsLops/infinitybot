@@ -4,3 +4,13 @@ const bot = mineflayer.createBot({
     port: 36631,
     username: 'Bot',   
   })
+
+  bot.on('chat', (username, message) => {
+    if (message == 'liv') {
+      leave()
+    }
+  })
+
+  function leave(){
+    bot.end()
+  }
