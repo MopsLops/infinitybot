@@ -9,8 +9,14 @@ const bot = mineflayer.createBot({
     console.log('bot is on')
   });
 
-  bot.on('chat', (all_members_are_administrators, message) => {
-    if (message == 'liv') {
+  bot.once('spawn', () => {
+    bot.setControlState('jump', true)
+    bot.setControlState('right', true)
+    bot.setControlState('back', true)
+  })
+
+  bot.on('chat', (username, message) => {
+    if (message == 'leave') {
       leave()
     }
   });
